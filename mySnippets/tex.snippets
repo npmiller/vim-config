@@ -1,0 +1,57 @@
+#################################################################################
+#                              LaTeX Templates                                  #
+#################################################################################
+snippet rapport "Rapport template" b
+\documentclass[a4paper]{scrartcl}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\title{${1:titre}}
+\author{$2}
+\date{\today}
+\begin{document}
+\maketitle
+$3
+\end{document}
+endsnippet
+
+snippet beamer "Beamer template" b
+\pdfminorversion=4
+\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+
+\title{${1:titre}}
+\subtitle{${2:second titre}}
+\author{${3:auteurs}}
+\usetheme{${4:theme (Warsow, Rochester etc ...)}}
+\begin{document}
+
+\frame{\titlepage}
+\frame{
+	\framtitle{${5}}
+	${6}
+}
+
+\end{document}
+endsnippet
+
+#########################
+#   Beamer snippets     #
+#########################
+snippet frame
+\frame{
+	\frametitle{${1}}
+	${2}
+}
+endsnippet
+# vim:ft=snippets:
