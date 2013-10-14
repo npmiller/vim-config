@@ -33,3 +33,6 @@ set listchars=tab:\|\
 " Start pathogen to load plugins "
 execute pathogen#infect()
 execute pathogen#helptags()
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
+set laststatus=0
