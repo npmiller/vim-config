@@ -1,6 +1,6 @@
 syntax on
 set smartindent
-"set number
+set number
 set mouse=a
 set autochdir
 set showcmd
