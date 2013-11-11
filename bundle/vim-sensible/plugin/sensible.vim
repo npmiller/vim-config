@@ -35,7 +35,7 @@ if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
-"set laststatus=2
+set laststatus=2
 set ruler
 set showcmd
 set wildmenu
