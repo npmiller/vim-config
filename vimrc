@@ -15,7 +15,7 @@ map ! :!
 
 " LaTeX shortcuts "
 abbreviate lcc :w \| !rubber -d % && rubber --clean %
-abbreviate lpv !zathura `basename -s .tex %`.pdf &> /dev/null &
+abbreviate lpv !xdg-open `basename -s .tex %`.pdf &> /dev/null &
 map lp :lpv<CR><CR>
 map lc :lcc<CR>
 
