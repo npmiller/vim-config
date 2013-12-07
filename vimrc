@@ -21,7 +21,8 @@ map lc :lcc<CR>
 
 abbreviate lwc w !detex \| wc -w
 
-let g:hybrid_use_Xresources = 1
+set t_Co=256
+"let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
 " Auto-complete menu
@@ -35,4 +36,4 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
-set laststatus=0
+
