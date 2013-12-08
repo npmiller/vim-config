@@ -36,4 +36,5 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
-
+let g:slime_target = "tmux"
+let g:slime_paste_file = tempname()
