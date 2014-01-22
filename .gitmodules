@@ -12,13 +12,13 @@
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/jpalardy/vim-slime.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-slime"]
 	path = bundle/vim-slime
-	url = git@github.com:jpalardy/vim-slime.git
+	url = https://github.com/jpalardy/vim-slime.git	
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
