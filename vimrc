@@ -23,7 +23,7 @@ abbreviate lwc w !detex \| wc -w
 
 set t_Co=256
 "let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+colorscheme hybrid-light
 
 " Auto-complete menu
 set completeopt=longest,menuone
