@@ -16,8 +16,10 @@ map ! :!
 " LaTeX shortcuts "
 abbreviate lcc :w \| !rubber -d % && rubber --clean %
 abbreviate lpv !xdg-open `basename -s .tex %`.pdf &> /dev/null &
+abbreviate lca :w \| !lualatex %
 map lp :lpv<CR><CR>
 map lc :lcc<CR>
+map la :lca<CR>
 
 abbreviate lwc w !detex \| wc -w
 
