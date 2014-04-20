@@ -89,7 +89,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " Give ultisnips extra-snipper folder "
-let g:UltiSnipsSnippetDirectories=["mySnippets"]
+let g:UltiSnipsSnippetDirectories=["mySnippets", "bundle/vim-snippets/UltiSnips"]
 
 " Set slime to use tmux "
 let g:slime_target = "tmux"
