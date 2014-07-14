@@ -16,6 +16,10 @@ abbreviate lca :w \| !lualatex %
 abbreviate lwc w !detex \| wc -w
 
 " Associated mappings: "
-map lp :lpv<CR><CR>
-map lc :lcc<CR>
-map la :lca<CR>
+map <leader>lp :lpv<CR><CR>
+map <leader>lc :lcc<CR>
+map <leader>la :lca<CR>
+
+" Insert mode mappings: "
+inoremap _ \
+inoremap \ _
