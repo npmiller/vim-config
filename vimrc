@@ -67,7 +67,7 @@ filetype indent plugin on
 
 " Show tabs using the defined listchars character "
 set list
-set listchars=tab:\|\ 
+set listchars=tab:\|\ ,eol:↩
 
 " Set the leader key to , "
 let mapleader = ","

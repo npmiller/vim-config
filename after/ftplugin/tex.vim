@@ -2,8 +2,8 @@ setlocal expandtab
 setlocal shiftwidth=2
 setlocal softtabstop=2
 
-""" LaTeX shortcuts """
-" Compile the current file "
+"""" LaTeX shortcuts """
+"" Compile the current file "
 abbreviate lcc :w \| !rubber -d % && rubber --clean %
 
 " Open the associated pdf in default pdf viewer "
@@ -23,3 +23,9 @@ map <leader>la :lca<CR>
 " Insert mode mappings: "
 inoremap _ \
 inoremap \ _
+
+" "
+set spell
+set spelllang=fr
+
+set textwidth=90
