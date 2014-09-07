@@ -94,3 +94,8 @@ let g:UltiSnipsSnippetDirectories=["mySnippets", "bundle/vim-snippets/UltiSnips"
 " Set slime to use tmux "
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
+
+" Use syntastic in passive mode "
+map <leader>sc :SyntasticCheck<CR>
+map <leader>sh :SyntasticReset<CR>
+map <leader>st :SyntasticToggleMode<CR>
