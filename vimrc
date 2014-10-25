@@ -79,7 +79,7 @@ set completeopt=longest,menuone
 set t_Co=256
 
 " Use the hybrid-light colorscheme "
-colorscheme hybrid-light
+colorscheme solarized
 
 " Use the latex filetype for every kind of tex file "
 let g:tex_flavor = "latex"
