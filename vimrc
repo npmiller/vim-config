@@ -57,6 +57,12 @@ set tabpagemax=50
 " Show as much text as possible, even if the line doesn't fit in the screen"
 set display+=lastline
 
+" Case insensitive searches "
+set ignorecase
+
+" Synchronise default register with clipboard "
+set clipboard^=unnamed
+
 " Set the default method of indenting "
 set autoindent
 set shiftwidth=4 " Use tabs of width equals to four spaces"
@@ -102,3 +108,5 @@ map <leader>st :SyntasticToggleMode<CR>
 
 " Set the filetype of *.md files to markdown instead of default modula2 "
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+map <leader>t :!urxvtc -cd $PWD<CR><CR>
