@@ -110,3 +110,6 @@ map <leader>st :SyntasticToggleMode<CR>
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 map <leader>t :!urxvtc -cd $PWD<CR><CR>
+
+" CtrlP mappings "
+map ; :CtrlPMixed<CR>
