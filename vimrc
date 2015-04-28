@@ -114,4 +114,3 @@ map <leader>t :!urxvtc -cd $PWD<CR><CR>
 " CtrlP mappings "
 map ; :CtrlPMixed<CR>
 
-autocmd BufNewFile,BufRead *.todo set filetype=todo
