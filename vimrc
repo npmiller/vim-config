@@ -1,8 +1,8 @@
 " Syntax higlighting "
 syntax on
 
-" Line nubmers "
-set number
+" Relative line nubmers "
+set relativenumber
 
 " Mouse "
 set mouse=a
