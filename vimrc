@@ -106,9 +106,6 @@ map <leader>sc :SyntasticCheck<CR>
 map <leader>sh :SyntasticReset<CR>
 map <leader>st :SyntasticToggleMode<CR>
 
-" Set the filetype of *.md files to markdown instead of default modula2 "
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-
 map <leader>t :!urxvtc -cd $PWD<CR><CR>
 
 " CtrlP mappings "
