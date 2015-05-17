@@ -75,8 +75,8 @@ filetype indent plugin on
 set list
 set listchars=tab:\|\ ,eol:↩
 
-" Set the leader key to , "
-let mapleader = ","
+" Set the leader key to space "
+let mapleader = " "
 
 " Auto-complete menu
 set completeopt=longest,menuone
@@ -112,5 +112,5 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 map <leader>t :!urxvtc -cd $PWD<CR><CR>
 
 " CtrlP mappings "
-map ; :CtrlPMixed<CR>
+map <leader>; :CtrlPMixed<CR>
 
