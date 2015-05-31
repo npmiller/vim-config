@@ -28,4 +28,6 @@ inoremap \ _
 set spell
 set spelllang=fr
 
+setlocal complete+=kspell
+
 set textwidth=90

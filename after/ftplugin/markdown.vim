@@ -4,6 +4,7 @@ setlocal softtabstop=2
 
 set spell
 set spelllang=fr
+setlocal complete+=kspell
 
 set textwidth=70
 
