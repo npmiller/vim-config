@@ -49,3 +49,5 @@
 [submodule "bundle/colorsupport.vim"]
 	path = bundle/colorsupport.vim
 	url = https://github.com/vim-scripts/colorsupport.vim
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
