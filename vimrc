@@ -84,15 +84,15 @@ set completeopt=longest,menuone
 " Force 256 colors display "
 set t_Co=256
 
-" Use the hybrid-light colorscheme "
-colorscheme solarized
-
 " Use the latex filetype for every kind of tex file "
 let g:tex_flavor = "latex"
 
 " Start pathogen to load plugins "
 execute pathogen#infect()
 execute pathogen#helptags()
+
+" Use the hybrid-light colorscheme "
+colorscheme vreeze
 
 " Give ultisnips extra-snipper folder "
 let g:UltiSnipsSnippetDirectories=["mySnippets", "bundle/vim-snippets/UltiSnips"]
@@ -113,3 +113,4 @@ map <leader>; :CtrlPMixed<CR>
 
 " VimWiki "
 let g:vimwiki_list = [{'path': '~/doc/wiki/'}]
+let g:fmtv_clang_format_py = '/usr/share/clang/clang-format.py'

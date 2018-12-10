@@ -16,9 +16,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-slime"]
-	path = bundle/vim-slime
-	url = https://github.com/jpalardy/vim-slime.git	
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -34,9 +31,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/a.vim"]
 	path = bundle/a.vim
 	url = https://github.com/vim-scripts/a.vim.git
@@ -51,3 +45,10 @@
 	url = https://github.com/vim-scripts/colorsupport.vim
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/formative.vim"]
+	path = bundle/formative.vim
+	url = https://github.com/frasercrmck/formative.vim.git
+[submodule "bundle/vreeze"]
+	path = bundle/vreeze
+	url = https://github.com/npmiller/vreeze.git
