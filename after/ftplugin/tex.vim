@@ -21,12 +21,12 @@ map <leader>lc :lcc<CR>
 map <leader>la :lca<CR>
 
 " Insert mode mappings: "
-inoremap _ \
-inoremap \ _
+" inoremap _ \
+" inoremap \ _
 
 " "
 set spell
-set spelllang=fr
+set spelllang=en
 
 setlocal complete+=kspell
 
