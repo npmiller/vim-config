@@ -106,11 +106,4 @@ map <leader>sc :SyntasticCheck<CR>
 map <leader>sh :SyntasticReset<CR>
 map <leader>st :SyntasticToggleMode<CR>
 
-map <leader>t :!urxvtc -cd $PWD<CR><CR>
-
-" CtrlP mappings "
-map <leader>; :CtrlPMixed<CR>
-
-" VimWiki "
-let g:vimwiki_list = [{'path': '~/doc/wiki/'}]
 let g:fmtv_clang_format_py = '/usr/share/clang/clang-format.py'
