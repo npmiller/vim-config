@@ -52,3 +52,6 @@
 [submodule "bundle/vreeze"]
 	path = bundle/vreeze
 	url = https://github.com/npmiller/vreeze.git
+[submodule "bundle/vim-zoom"]
+	path = bundle/vim-zoom
+	url = https://github.com/dhruvasagar/vim-zoom.git
