@@ -65,8 +65,9 @@ set clipboard^=unnamed
 
 " Set the default method of indenting "
 set autoindent
-set shiftwidth=4 " Use tabs of width equals to four spaces"
-set tabstop=4    "                                        "
+set shiftwidth=2 " Use tabs of width equals to four spaces"
+set tabstop=2    "                                        "
+set expandtab
 set backspace=indent,eol,start " Use backspace to remove indent "
 " Set the indenting method depending on filetype "
 filetype indent plugin on

@@ -6,7 +6,7 @@ set spell
 set spelllang=en
 setlocal complete+=kspell
 
-set textwidth=70
+set textwidth=80
 
 abbreviate mcc :w \| !pandoc -o `basename -s .md %`.pdf %
 
