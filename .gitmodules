@@ -1,6 +1,7 @@
 [submodule "bundle/plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
+	branch = master
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
@@ -39,7 +40,7 @@
 	url = https://github.com/vimwiki/vimwiki.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
-	url = git@github.com:tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/colorsupport.vim"]
 	path = bundle/colorsupport.vim
 	url = https://github.com/vim-scripts/colorsupport.vim
