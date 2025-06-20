@@ -113,10 +113,13 @@ Plug 'tpope/vim-commentary'
 Plug 'frasercrmck/formative.vim'
 Plug 'npmiller/vreeze'
 Plug 'dhruvasagar/vim-zoom'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-" Use the hybrid-light colorscheme "
+let g:gitgutter_terminal_reports_focus=0
+
+" Use the vreeze colorscheme "
 colorscheme vreeze
 
 " Give ultisnips extra-snippet folder "
