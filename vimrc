@@ -88,23 +88,42 @@ set t_Co=256
 " Use the latex filetype for every kind of tex file "
 let g:tex_flavor = "latex"
 
-" Start pathogen to load plugins "
-execute pathogen#infect()
-execute pathogen#helptags()
+" Install plug automatically
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" :PlugInstall, :PlugUpdate, :PlugDiff, :PlugClean
+call plug#begin()
+
+Plug 'aklt/plantuml-syntax'
+Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-fugitive'
+Plug 'jpalardy/vim-slime'
+Plug 'tpope/vim-surround'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-vinegar'
+Plug 'vim-scripts/a.vim'
+Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'frasercrmck/formative.vim'
+Plug 'npmiller/vreeze'
+Plug 'dhruvasagar/vim-zoom'
+
+call plug#end()
 
 " Use the hybrid-light colorscheme "
 colorscheme vreeze
 
-" Give ultisnips extra-snipper folder "
-let g:UltiSnipsSnippetDirectories=["mySnippets", "bundle/vim-snippets/UltiSnips"]
+" Give ultisnips extra-snippet folder "
+let g:UltiSnipsSnippetDirectories=["mySnippets", "plugged/vim-snippets/UltiSnips"]
 
 " Set slime to use tmux "
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
-
-" Use syntastic in passive mode "
-map <leader>sc :SyntasticCheck<CR>
-map <leader>sh :SyntasticReset<CR>
-map <leader>st :SyntasticToggleMode<CR>
 
 let g:fmtv_clang_format_py = '/usr/share/clang/clang-format.py'
