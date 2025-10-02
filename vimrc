@@ -114,13 +114,17 @@ Plug 'frasercrmck/formative.vim'
 Plug 'npmiller/vreeze'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'airblade/vim-gitgutter'
+Plug 'EdenEast/nightfox.nvim'
 
 call plug#end()
 
 let g:gitgutter_terminal_reports_focus=0
 
-" Use the vreeze colorscheme "
-colorscheme vreeze
+if has("nvim")
+  colorscheme dayfox
+else
+  colorscheme default
+endif
 
 " Give ultisnips extra-snippet folder "
 let g:UltiSnipsSnippetDirectories=["mySnippets", "plugged/vim-snippets/UltiSnips"]
