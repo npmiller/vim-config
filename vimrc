@@ -115,6 +115,7 @@ Plug 'npmiller/vreeze'
 Plug 'dhruvasagar/vim-zoom'
 Plug 'airblade/vim-gitgutter'
 Plug 'EdenEast/nightfox.nvim'
+Plug 'llvm/llvm.vim'
 
 call plug#end()
 
