@@ -130,6 +130,9 @@ endif
 " Give ultisnips extra-snippet folder "
 let g:UltiSnipsSnippetDirectories=["mySnippets", "plugged/vim-snippets/UltiSnips"]
 
+" Improve search path "
+let g:alternateSearchPath = 'reg:|/\([^/]*\)/lib/|/\1/include/\1/||,reg:|/include/[^/]*/|/lib/||'
+
 " Set slime to use tmux "
 let g:slime_target = "tmux"
 let g:slime_paste_file = tempname()
