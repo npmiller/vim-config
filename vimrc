@@ -1,8 +1,8 @@
 " Syntax higlighting "
 syntax on
 
-" Relative line nubmers "
-set relativenumber
+" Line nubmers "
+set number
 
 " Mouse "
 set mouse=a
@@ -133,19 +133,19 @@ let g:UltiSnipsSnippetDirectories=["mySnippets", "plugged/vim-snippets/UltiSnips
 " Improve search path "
 let g:alternateSearchPath = 'reg:|/\([^/]*\)/lib/|/\1/include/\1/||,reg:|/include/[^/]*/|/lib/||'
 
-" Toggle copy mode (disables mouse, listchars, relativenumber) "
+" Toggle copy mode (disables mouse, listchars, number) "
 let g:copy_mode = 0
 function! ToggleCopyMode()
   if g:copy_mode
     set mouse=a
     set listchars=tab:\|\ ,eol:↩
-    set relativenumber
+    set number
     GitGutterEnable
     let g:copy_mode = 0
   else
     set mouse=
     set listchars=
-    set norelativenumber
+    set nonumber
     GitGutterDisable
     let g:copy_mode = 1
   endif
